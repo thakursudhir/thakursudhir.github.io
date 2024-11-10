@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media screen and (max-width: 600px){
+    body {
+        color: red;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    /*background: blue;*/
+    height: 10vh;
+    width: 100%;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    position: fixed;
+}
+.navlist li{
+list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color:white;
+    position: relative;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: rgb(58, 55, 55);
+    width: 70%;
+    padding-left: 3rem;
+}
+.right-container{
+    background: linear-gradient(-45deg, blue, rgb(58, 55, 55)70%);
+    width: 30%;
+
+}
+.icons .fa-brands{
+    color: white;
+    font-size: 1.5rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.content{
+    margin: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: white;
+}
+.content .intro span{
+    color: chocolate;
+}
+.content h1{
+    font-size: 3rem;
+    color: blue;
+}
+.content .detail{
+    font-size: 1.2rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.7rem;
+}
+.btn-container button{
+    border: .2rem solid rgb(54, 96, 212);
+    font-size: 1.1rem;
+    padding: .4rem 1.2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: 1s ease;
+
+}
+button:nth-child(1){
+    background: aqua;
+    color: black;
+
+}
+button:nth-child(2){
+    background: transparent;
+    color: rgb(102, 255, 0);
+    margin-left: 1.5rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: aqua;
+
+}
+button:nth-child(2):hover{
+    background: aqua;
+    color: rgb(20, 20, 20);
+    
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(white,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg,transparent 50%, rgb(58, 55, 55) 50%);
+    width: 30rem;
+}
+.circle:nth-child(2){
+   /* background: white;*/
+    width: 26rem;
+    background-image: url("Images/mpic.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .5rem solid white;
+    box-shadow: 0 0 1.5rem #fff, 
+    inset 0 0 1rem #fff,
+    0 0 2rem blue,
+    inset 0 0 2rem blue,
+    0 0 4rem blue,
+    inset 0 0 4rem blue;
+}
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: .2rem;
+    left: 0%;
+    bottom: -5px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform .5s ;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.contact{
+    background: rgb(58, 55, 55);
+    width: 70%;
+    padding-left: 3rem;
+}
+.contact h1{
+    color: rgb(233, 233, 233);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.contact input{
+    background-color: antiquewhite;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: yellow;
+    margin-bottom: 20px;
+}
+
+.contact body{
+    background: black;
+}
